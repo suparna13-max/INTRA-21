@@ -1,181 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>INTRA'21</title>
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
 
-    *{
-    margin: 0;
-    padding: 0;
-    }
+        }
 
-    .nalist{
-        display: flex;
-        background-color: rgb(29, 2, 2);
-        align-items: center;
-        color: white;
-        list-style: none;
-        text-align: center;
+        body {
+            height: 80vh;
+            background-color: rgb(49, 11, 11);
+
+
+        }
+
+        /* .nalist { */
+        
+            /* background-color: rgb(37, 6, 6); */
+            /* align-items: center; */
+            /* color: white; */
+            
+            .na {
+           
+           background: rgb(26, 2, 2);
+           height: 80px;
+            }
+
+
+            .logo{
+            float: left;
+        }
+
+         .logo img {
+            width: 50px;
+            padding: 12px;
+            padding-left: 50px;
+            cursor: pointer;
+            border-radius: 40px;
+            animation: moveup 1s linear;
+            animation-delay: 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards; 
+            /* margin-top: 50px; */
+         }
+            .brain {
+            /* padding-left: 1000px; */
+            font-size: 30px;
+            animation: moveup 1s linear;
+            animation-delay: 3s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            /* margin-top: -80px; */
+            float:right;
+            color: white;
+            padding-right: 50px;
+            padding-top: 25px;
+            
+        }
+
         
 
-    }
-    .intra{
-        text-align: center;
-        padding-left: 580px;
-        font-size: 30px;
-        animation: moveup 1s linear;
-    animation-delay: 2s;
-    visibility: hidden;
-    animation-fill-mode: forwards;
-    }
-    .brain{
-        padding-left: 580px;
-        font-size: 30px;
-        animation: moveup 1s linear;
-    animation-delay: 3s;
-    visibility: hidden;
-    animation-fill-mode: forwards;
-    }
-    .logo img{
-        width: 50px;
-    padding: 12px;
-    padding-left: 50px;
-    cursor: pointer;
-    border-radius: 40px;
-    animation: moveup 1s linear;
-    animation-delay: 1s;
-    visibility: hidden;
-    animation-fill-mode: forwards;
-    }
-    @keyframes moveup{
-    0%{
-        transform: translateY(-100px);
-        visibility: visible;
-    }
-    100%{
-        transform: translateY(0px);
-        visibility: visible;
-    }
-}
-    .nav{
-        background-color: rgba(31, 6, 6, 0.966);
-        height: 100hv;
-        width: 100%;
-    }
-    .na{
-        background-size: cover;
-        background: black ;
-        height: 100hv;
+        .intra {
+            text-align: center;
+            /* padding-left: 250px; */
+            font-size: 30px;
+            animation: moveup 1s linear;
+            animation-delay: 2s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            color: white;
+            /* margin-top: 50px; */
+            padding-top: 25px;
+        }
 
-    }
-    .mi{
-        display: flex;
-        background-color: rgb(49, 11, 11);
-        color: white;
-    }
-    .middle{
-        background-color: rgb(49, 11, 11);
-        color: rgb(189, 82, 82);
-    }
-    .head{
-        padding-top: 50px;
-        text-align: center;
-        padding-bottom: 100px;
-        animation: moveup 1s linear;
-    animation-delay: 4s;
-    visibility: hidden;
-    animation-fill-mode: forwards;
-    font-size: 30px;
-    }
-    .work{
-        font-size: 30px;
-        padding-left: 20px;
-        list-style: none;
-        animation: moveup 1s linear;
-    animation-delay: 5s;
-    visibility: hidden;
-    animation-fill-mode: forwards;
-    }
-    
+        
+        
 
-    .about{
-       font-size: 20px;
-       padding-bottom: 50px;
-    }
-    .tech{
-        font-size: 30px;
-        padding-left: 20px;
-        list-style: none;
-        animation: moveup 1s linear;
-    animation-delay: 5s;
-    visibility: hidden;
-    animation-fill-mode: forwards;
-    }
-    .event{
-        font-size: 20px;
-        padding-bottom: 50px;
 
-    }
-    .fun{
-        font-size: 30px;
-        padding-left: 20px;
-        list-style: none;
-        animation: moveup 1s linear;
-    animation-delay: 5s;
-    visibility: hidden;
-    animation-fill-mode: forwards;
+        @keyframes moveup {
+            0% {
+                transform: translateY(-100px);
+                visibility: visible;
+            }
 
-    }
-    .e{
-        font-size: 20px;
-         padding-bottom: 50px;
-    }
-    
+            100% {
+                transform: translateY(0px);
+                visibility: visible;
+            }
+        }
 
-</style>
+        
+
+        
+
+        .mi {
+            display: flex;
+            background-color: rgb(49, 11, 11);
+            color: white;
+        }
+
+        .middle {
+            background-color: rgb(49, 11, 11);
+            color: rgb(189, 82, 82);
+        }
+
+        .head {
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 100px;
+            animation: moveup 1s linear;
+            animation-delay: 4s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            font-size: 30px;
+        }
+
+        .work {
+            font-size: 30px;
+            padding-left: 20px;
+            list-style: none;
+            animation: moveup 1s linear;
+            animation-delay: 5s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+
+
+        .about {
+            font-size: 20px;
+            padding-bottom: 50px;
+        }
+
+        .tech {
+            font-size: 30px;
+            padding-left: 20px;
+            list-style: none;
+            animation: moveup 1s linear;
+            animation-delay: 5s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+
+        .event {
+            font-size: 20px;
+            padding-bottom: 50px;
+
+        }
+
+        .fun {
+            font-size: 30px;
+            padding-left: 20px;
+            list-style: none;
+            animation: moveup 1s linear;
+            animation-delay: 5s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+
+        }
+
+        .e {
+            font-size: 20px;
+            padding-bottom: 50px;
+        }
+    </style>
 </head>
-<body>
-  <div class="na">
-  
-            <ul class="nalist">
-                <div class="logo"><img src="gx.png" alt="logo"></div>
-                <li class="intra">INTRA'21</li><br>
-                <li class="brain">CUrBrain</li>
-    </ul>
-  </div>
 
-  <section class="middle">
-    <h1 class="head">-|GEEKONIX|-</h1><br><br>
-      <div class="mi">
-          
-          <ul class="work">Workshops, Seminars and Talks <br> <br>
-              <li class="about">Geekonix conducts workshops related to in-trend technical topics such
-                as robotics, coding, photography, and many more in college. Seminars
-                focussing on higher studies, alternative career paths and
-                opportunities are organized frequently. The college students get to
-                experience inspirational talks with various eminent personalities from
-                time to time</li>
-          </ul>
-          <ul class="tech">Technical Events <br> <br>
-          <li class="event">EDGE - the brainchild of Geekonix and the second-largest tech fest in
-            Eastern India, is organized by Geekonix with 48+ enthralling events
-            with an unimaginable prize pool. For the students of our college to be
-            able to savour EDGE with more tenacity and thrill, Geekonix organizes
-            INTRA college tech fest exclusively for the college students.
-            </li>
-          </ul>
-            <ul class="fun">Fun Events <br> <br>
-            <li class="e">The 3 days of EDGE are made more enjoyable, with FUN EVENTS like Paint
-                Ball, Laser Tag, Red Bull Pong, Body Zorbing, Flip the Bottle and
-                selfie competitions. After a day of intense competition and events, it
-                helps the participants to relieve themselves and enjoy the moments.
-                Winners get goodies and gift vouchers.</li>
+<body>
+    <div class="na">
+<!-- 
+        <ul class="nalist">
+            <div class="logo"><img src="gx.png" alt="logo"></div>
+            <li class="intra">INTRA'21</li><br>
+            <li class="brain">CUrBrain</li>
+        </ul> -->
+
+        <div class="logo"><img src="gx.png" alt="logo"></div>
+        <div class="brain">CUrBrain</div>
+        <div class="intra">INTRA'21</div>
+       
+    </div>
+
+    <section class="middle">
+        <h1 class="head">-|GEEKONIX|-</h1><br><br>
+        <div class="mi">
+
+             <ul class="work">Workshops, Seminars and Talks <br> <br>
+                <li class="about">Geekonix conducts workshops related to in-trend technical topics such
+                    as robotics, coding, photography, and many more in college. Seminars
+                    focussing on higher studies, alternative career paths and
+                    opportunities are organized frequently. The college students get to
+                    experience inspirational talks with various eminent personalities from
+                    time to time</li>
             </ul>
-      </div>
-  </section>
+            <ul class="tech">Technical Events <br> <br>
+                <li class="event">EDGE - the brainchild of Geekonix and the second-largest tech fest in
+                    Eastern India, is organized by Geekonix with 48+ enthralling events
+                    with an unimaginable prize pool. For the students of our college to be
+                    able to savour EDGE with more tenacity and thrill, Geekonix organizes
+                    INTRA college tech fest exclusively for the college students.
+                </li>
+            </ul>
+            <ul class="fun">Fun Events <br> <br>
+                <li class="e">The 3 days of EDGE are made more enjoyable, with FUN EVENTS like Paint
+                    Ball, Laser Tag, Red Bull Pong, Body Zorbing, Flip the Bottle and
+                    selfie competitions. After a day of intense competition and events, it
+                    helps the participants to relieve themselves and enjoy the moments.
+                    Winners get goodies and gift vouchers.</li>
+            </ul> 
+
+
+        </div>
+    </section>
 </body>
+
 </html>
